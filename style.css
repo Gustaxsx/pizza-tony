@@ -337,3 +337,100 @@ footer{
     justify-content: space-between;
     color: #fff;
 }
+
+@media (max-width: 1024px){
+    header{
+        position: absolute;
+        background-color: transparent;
+        left: 0;
+        top: 48px;
+    }
+    header menu{
+        width: 100vw;
+        height: 64px;
+        position: fixed;
+        left: 0;
+        bottom: 0%;
+        background-color: var(--primary-color);
+        z-index: 999;
+        color: #fff;
+        justify-content: space-evenly;
+        pointer-events: none;
+    }
+
+    header li:hover {
+        color: var(--primary-color);
+    }
+    .container-produtos{
+        gap: 32px;
+    }
+    .home{
+        grid-template-rows: none;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: end;
+        padding-bottom: 64px;
+        gap: 0;
+    }
+    .home .container-produtos {
+        display: none;
+    }
+    .container-produtos .pizza {
+        width: 100%;
+    }
+    .container-produtos img {
+        width: 100%;
+    }
+    .container-produtos .pizza:nth-child(+1)
+    {
+        display: none;
+    }
+
+    .cardapio{
+        justify-content: center;
+        gap: 16px;
+    }
+    
+    .pizza.bebida:nth-last-child(1){
+        display: none;
+    }
+
+    .pizza.bebida{
+        width: auto;
+    }
+
+    .opcoes-servicos{
+        flex-direction: column;
+    }
+    
+    .servico-card{
+        width: 100%;
+        height: 260px;
+        flex-wrap: wrap;
+    }
+    .servico-card p {
+        width: 60%;
+    }
+
+    .contatos-container{
+        height: 400px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contatos-item{
+        padding: 0;
+    }
+    .contatos-item:nth-child(2){
+        display: none;
+    }
+    .contatos-item.social{
+        align-items: flex-end;
+    }
+    .creditos{
+        margin-bottom: 64px;
+    }
+    
+}
